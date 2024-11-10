@@ -1,7 +1,7 @@
 Assume that you are working on an image classification problem using Deep Learning in Tensorflow and your image dataset is split into subfolders,
 each subfolder named after a class and you do not wish to manually create training, testing and validation folders. If you are new to tensorflow 
 and have been using the "tf.keras.preprocessing.image.ImageDataGenerator" to split your data into training and validation sets, then you may have
-come across the problem where currently (in the recent version of TF) you can not use the same method to split the data into train, validation and 
+come across the problem where currently (in the recent version of TF v2.13.0 as of August 2023) you can not use the same method to split the data into train, validation and 
 test sets i.e., if your dataset path is in "data_root" and if you use the following code,
 
 valid_generator = valid_datagen.flow_from_directory( data_root,
